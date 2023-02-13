@@ -39,7 +39,8 @@
 #define FILTER_C 0.8
 #define DIR_GPIO_PORT GPIOB
 #define DIR_PIN GPIO_PIN_7
-#define __RPM_TO_VELOCITY(rpm) (rpm) // todo make a function to calculate velocity from RPM
+#define PI 3.14f
+#define __RPM_TO_VELOCITY(rpm) (rpm / 60.0f * 2 * PI / 2.0f * 0.075f) // todo make a function to calculate velocity from RPM
 
 #define M1
 
