@@ -11,9 +11,9 @@
 #define CONTROLLER_INCLUDED
 #endif
 
-#define Kp 0.1f
-#define Ki 0.008f
-#define Kd 0.005f
+#define Kp 0.03f
+#define Ki 0.0f
+#define Kd 0.0f
 
 #define MAX_OUT 950
 

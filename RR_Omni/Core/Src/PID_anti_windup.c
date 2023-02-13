@@ -25,7 +25,7 @@ float calc_output_PID_AW(float target, float curr_val, float dt) {
 
   pid_aw_e_sum += ((e_for_i + e_for_i_pre)*dt/2.0); // trapezoid integral
 
-  pid_aw_e_diff = (3*pid_aw_e - 4*pid_aw_e_pre + pid_aw_e_pre_pre) / (2*dt); // differential
+  pid_aw_e_diff = (3.0f*pid_aw_e - 4.0f*pid_aw_e_pre + pid_aw_e_pre_pre) / (2.0f*dt); // differential
 
   pid_aw_result = Kp * pid_aw_e + (Ki * pid_aw_e_sum) + (Kd * pid_aw_e_diff);
 
